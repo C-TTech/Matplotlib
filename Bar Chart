@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+
+plt.figure(figsize=(10, 5))
+
+labels = ("Field 1", "Field 2", "Field 3", "Field 4")
+values = [50, 100, 60, 30]
+values2 = [200, 300, 150, 250]
+positions = [0, 1, 2, 3]
+positions2 = [0.5, 1.5, 2.5, 3.5]
+
+plt.bar(positions, values, width=0.5, colour="r")
+plt.bar(positions2, values2, width=0.5)
+
+plt.xticks(positions, labels)
+
+
+plt.show()
