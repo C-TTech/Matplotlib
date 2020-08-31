@@ -1,0 +1,19 @@
+from tkinter import *
+from tkinter import Label
+import numpy as np
+import matplotlib.pyplot as plt
+
+root = Tk()
+root.title('TKinter-NumPy-Matplotlib')
+root.geometry("400x200")
+
+def graph():
+    land_prices = np.random.normal(25000, 5000, 10000)
+    plt.hist(land_prices, 60)
+    plt.show()
+
+my_button = Button(root, text="Display Graph", command=graph)
+my_button.pack()
+
+
+root.mainloop()
